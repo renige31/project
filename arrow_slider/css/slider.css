@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  width: 50%;
+}
+
+.slide_wrap{}
+.slide_show{
+  width : 600px;
+  height: 450px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.slide_show .slide_img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1800px;
+  height: 450px;
+  overflow: hidden;
+}
+.slide_show .slide_img > div{
+  float: left;
+  width: 600px;
+  height: 450px;
+
+}
