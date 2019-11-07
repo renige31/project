@@ -1,0 +1,1471 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+    
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}    
+    
+a, a:hover {
+    text-decoration: none;
+    color: #000;
+}    
+
+ol, ul, li {
+    list-style: none;
+}
+table, th ,tr, td {
+    border-collapse: collapse;
+}    
+h1, h2, h3, h4 {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#ticket-page {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 969px;
+    overflow: hidden;
+}
+#section1 {
+    position: fixed;
+    left: 0;
+    overflow: hidden;
+}    
+#section2 {
+    position: fixed;
+    left: 480px;
+    overflow: hidden;
+}
+#section3 {
+    position: fixed;
+    left: 960px;
+    overflow: hidden;
+}
+#section4 {
+    position: fixed;
+    left: 1440px;
+    overflow: hidden;
+}
+.x-box {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 100;
+}
+
+.discount {
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 66px;
+    z-index: 9999;
+}    
+/*ticket-box*/
+.ticket-box {
+    position: absolute;
+    top: 245px;
+    left: 66px;
+    z-index: 999;
+}
+
+#section1 > .ticket-box > .btn {
+    width: 200px;
+    height: 50px;
+    line-height: 40px;
+    position: absolute;
+    top: 425px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 3px solid #229bd7;
+    text-align: center;
+    color: #229bd7;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#section1 > .ticket-box > .btn:hover {
+    background-color: #229bd7;
+    color: #fff;
+}
+#section2 > .ticket-box > .btn {
+    width: 200px;
+    height: 50px;
+    line-height: 40px;
+    position: absolute;
+    top: 425px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 3px solid #51dbc1;
+    text-align: center;
+    color: #51dbc1;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#section2 > .ticket-box > .btn:hover {
+    background-color: #51dbc1;
+    color: #fff;
+}
+#section3 > .ticket-box > .btn {
+    width: 200px;
+    height: 50px;
+    line-height: 40px;
+    position: absolute;
+    top: 425px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 3px solid #f1b464;
+    text-align: center;
+    color: #f1b464;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#section3 > .ticket-box > .btn:hover {
+    background-color: #f1b464;
+    color: #fff;
+}
+#section4 > .ticket-box > .btn {
+    width: 200px;
+    height: 50px;
+    line-height: 40px;
+    position: absolute;
+    top: 425px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 3px solid #e895bf;
+    text-align: center;
+    color: #e895bf;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#section4 > .ticket-box > .btn:hover {    
+    background-color: #e895bf;
+    color: #fff;
+}
+
+
+/*section1*/
+.section1-c {
+    margin-top: 130px;
+}
+.penguin-h {
+    position: absolute;
+    top: 360px;
+    left: 123px;
+}
+
+.glacier1 {
+    position: absolute;
+    bottom: 150px;
+    left: 380px;
+    animation: glacier1 2s linear infinite both;
+    animation-play-state: paused;
+}    
+.glacier2 {
+    position: absolute;
+    bottom: 180px;    
+    left: 0;
+    animation: glacier2 3s linear infinite both;
+    animation-play-state: paused;
+}    
+.penguin1 {
+    position: absolute;
+    bottom: 160px;
+    left: 60px;
+    animation: penguin1 2s linear infinite both;
+    animation-play-state: paused;
+}    
+.penguin2 {
+    position: absolute;
+    bottom: 480px;
+    right: 20px;
+    animation: penguin2 2s linear infinite both;
+    animation-play-state: paused;
+}    
+@keyframes glacier1 {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, -5px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 2px);}
+    100% {transform: translate(0);}
+}    
+
+@keyframes glacier2 {
+    0% {transform: translate(0);}
+    25% {transform: translate(-2px, -5px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 5px);}
+    100% {transform: translate(0);}
+}
+    
+@keyframes penguin1 {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, -2px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 2px);}
+    100% {transform: translate(0);}
+}    
+    
+@keyframes penguin2 {
+    0% {transform: translate(0);}
+    25% {transform: translate(-3px, -5px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(2px, 5px);}
+    100% {transform: translate(0);}
+}    
+      
+
+
+
+
+
+
+/*section2*/
+    /*coral*/
+    .section2-c {
+        margin-top: 125px;
+        z-index: 5;
+    }    
+    .coral0 {
+        position: absolute;
+        bottom: 280px;
+        left: 0;
+        animation: coral0 3s linear infinite alternate;
+        animation-play-state: paused;
+    }
+    .coral1 {
+        position: absolute;
+        bottom: 265px;
+        left: 28px;
+    }
+    .coral2 {
+        position: absolute;
+        bottom: 185px;
+        left: 170px;
+        animation: coral2 2s linear infinite alternate;
+        animation-play-state: paused;
+    }
+    .coral3 {
+        position: absolute;
+        bottom: 185px;
+        left: 250px;
+        animation: coral3 3s linear infinite alternate;
+        animation-play-state: paused;
+    }    
+    .coral4 {
+        position: absolute;
+        bottom: 210px;
+        left: 315px;
+    }    
+    .coral5 {
+        position: absolute;
+        bottom: 240px;
+        right: -10px;
+        animation: coral5 4s linear infinite alternate;
+        animation-play-state: paused;
+    }
+    .coral6 {
+        position: absolute;
+        bottom: 215px;
+        right: 55px;
+    }
+
+
+    @keyframes coral0 {
+        0% {transform-origin: bottom center; transform: rotate(5deg);}
+        50% {transform-origin: bottom center; transform: rotate();}
+        100% {transform-origin: bottom center; transform: rotate(-5deg);}
+    }    
+
+    @keyframes coral2 {
+        0% {transform-origin: bottom center; transform: rotate(5deg);}
+        50% {transform-origin: bottom center; transform: rotate();}
+        100% {transform-origin: bottom center; transform: rotate(-5deg);}
+    } 
+    @keyframes coral3 {
+        0% {transform-origin: bottom center; transform: rotate(5deg);}
+        50% {transform-origin: bottom center; transform: rotate();}
+        100% {transform-origin: bottom center; transform: rotate(-5deg);}
+    } 
+    @keyframes coral5 {
+        0% {transform-origin: bottom center; transform: rotate(10deg);}
+        50% {transform-origin: bottom center; transform: rotate();}
+        100% {transform-origin: bottom center; transform: rotate(-10deg);}
+    }
+
+.bubble-3 {
+    position: absolute;
+    top: 13%;
+    left: 2%;
+    z-index: 1;
+    animation: bubble-3 2s linear infinite both;
+    animation-play-state: paused;
+}    
+
+@keyframes bubble-3 {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, -5px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 2px);}
+    100% {transform: translate(0);}
+}    
+
+.manatee1 {
+    z-index: 10;
+    position: absolute;
+    top: 42%;
+    left: -12%;
+    animation: manatee1 3s cubic-bezier(.17,.67,.88,.38) infinite both;
+    animation-play-state: paused;
+}
+
+@keyframes manatee1 {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, -5px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 7px);}
+    100% {transform: translate(0);}
+}
+
+.manatee2 {
+    z-index: 10;
+    position: absolute;
+    top: 32%;
+    right: -6%;
+    animation: manatee2 4s linear infinite both;
+    animation-play-state: paused;
+}    
+    
+@keyframes manatee2 {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, -7px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(5px, 6px);}
+    100% {transform: translate(0);}
+}     
+
+.jellyfish1 {
+    position: absolute;
+    bottom: 30%;
+    right: 14%;
+    animation: jellyfish1 12s ease infinite both;
+    animation-play-state: paused;
+}
+
+@keyframes jellyfish1 {
+    0% {transform: translate(0);}
+    5% {transform: translate(3px, -20px);}
+    10% {transform: translate(3px, -15px);}
+    15% {transform: translate(10px, -40px);}
+    20% {transform: translate(10px, -35px);}
+    25% {transform: translate(30px, -60px);}    
+    30% {transform: translate(30px, -45px);}
+    35% {transform: translate(50px, -80px);}
+    40% {transform: translate(50px, -75px);}
+    45% {transform: translate(70px, -90px);}
+    50% {transform: translate(70px, -85px);}
+    55% {transform: translate(90px, -110px);}
+    60% {transform: translate(90px, -105px);}
+    65% {transform: translate(110px, -130px);}
+    70% {transform: translate(110px, -125px);}
+    75% {transform: translate(130px, -150px);}
+    80% {transform: translate(130px, -145px);} 
+    85% {transform: translate(150px, -170px);}
+    90% {transform: translate(150px, -165px);} 
+    95% {transform: translate(170px, -190px);}
+    100% {transform: translate(170px, -185px);}
+}
+.jellyfish2 {
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    animation: jellyfish2 4s ease infinite both;
+    animation-play-state: paused;
+}    
+
+@keyframes jellyfish2 {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, 10px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 6px);}
+    100% {transform: translate(0);}
+}    
+    
+.fish1 {
+    position: absolute;
+    bottom: 22%;
+    right: 12%;
+    animation: fish1 4s linear infinite both;
+    animation-play-state: paused;
+}
+
+@keyframes fish1 {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, 10px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 6px);}
+    100% {transform: translate(0);}
+}   
+
+.fish2 {
+    position: absolute;
+    bottom: 42%; 
+} 
+.fish3 {
+    position: absolute;
+    top: 8%;
+}    
+    
+/*section3*/
+.castle {
+    position: absolute;
+    top: 313px;
+    left: 75px;
+}
+/*상단 별*/
+.starfish1 {
+    position: absolute;
+    top: -70px;
+    left: -70px;
+}
+.starfish2 {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    animation: starfish2 3s linear infinite both;
+    animation-play-state: paused;
+}
+.starfish3 {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    animation: starfish3 2s linear infinite both;
+    animation-play-state: paused;
+}
+.starfish4 {
+    position: absolute;
+    top: -80px;
+    right: 100px;
+    animation: starfish4 3s ease infinite both;
+    animation-play-state: paused;
+}
+.starfish5 {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    animation: starfish5 3s ease infinite both;
+    animation-play-state: paused;
+}
+@keyframes starfish2 {
+    0% {transform: scale();}
+    50% {transform: scale(.8);}
+    100% {transform: scale();}
+}
+@keyframes starfish3 {
+    0% {transform: scale();}
+    50% {transform: scale(.9);}
+    100% {transform: scale();}
+}
+@keyframes starfish4 {
+    0% {transform: scale();}
+    50% {transform: scale(.6);}
+    100% {transform: scale();}
+}
+@keyframes starfish5 {
+    0% {transform: scale();}
+    50% {transform: scale(.8);}
+    100% {transform: scale();}
+}
+
+/*하단 별*/
+.section3-downS {
+    margin-top: 140px;
+}
+.starfish6 {
+    position: absolute;
+    bottom: 180px;
+    left: -25px;
+    animation: starfish6 3s ease infinite both;
+    animation-play-state: paused;
+}
+.starfish7 {
+    position: absolute;
+    bottom: 70px;
+    left: -30px;
+    animation: starfish7 2s ease infinite both;
+    animation-play-state: paused;
+}
+.starfish8 {
+    position: absolute;
+    bottom: 115px;
+    left: 100px;
+    animation: starfish8 3s ease infinite both;
+    animation-play-state: paused;
+}
+.starfish9 {
+    position: absolute;
+    bottom: 163px;
+    right: -20px;
+    animation: starfish9 3s ease infinite both;
+    animation-play-state: paused;
+}
+.starfish10 {
+    position: absolute;
+    bottom: 100px;
+    right: -50px;
+    animation: starfish10 4s ease infinite both;
+    animation-play-state: paused;
+}
+@keyframes starfish6 {
+    0% {transform: scale();}
+    50% {transform: scale(.6);}
+    100% {transform: scale();}
+}
+@keyframes starfish7 {
+    0% {transform: scale();}
+    50% {transform: scale(.7);}
+    100% {transform: scale();}
+}
+@keyframes starfish8 {
+    0% {transform: scale();}
+    50% {transform: scale(.8);}
+    100% {transform: scale();}
+}
+@keyframes starfish9 {
+    0% {transform: scale();}
+    50% {transform: scale(.9);}
+    100% {transform: scale();}
+}
+@keyframes starfish10 {
+    0% {transform: scale();}
+    50% {transform: scale(.9);}
+    100% {transform: scale();}
+}
+
+
+/*section4*/
+.section4-downF {
+    margin-top: 90px;
+}
+.whale {
+    position: absolute;
+    top: 15%;
+    left: -50px;
+    z-index: 50;
+    animation: whale 4s linear infinite both;
+    animation-play-state: paused;
+}    
+.bubble-4 {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    animation: bubble-4 4s linear infinite both;
+    animation-play-state: paused;
+}    
+.fish1-4 {
+    position: absolute;
+    bottom: 120px;
+    left: -20px;
+    animation: fish1-4 8s linear infinite both; 
+    animation-play-state: paused;
+}
+.fish2-4 {
+    position: absolute;
+    top: 60px;
+    right: -10px;
+}
+.fish3-4 {
+    position: absolute;
+    top: -30px;
+    left: -20px;
+}
+.fish4-4 {
+    position: absolute;
+    bottom: 90px;
+    left: -20px;
+    animation: fish4-4 5s linear infinite both; 
+    animation-play-state: paused;
+}
+.diver {
+    position: absolute;
+    top: 180px;
+    z-index: 99;
+}
+.diver2-1 {
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    animation: diver2-1 2s linear infinite both;
+    animation-play-state: paused;
+} 
+
+.diver2-2 {
+    position: absolute;
+    top: 150px;
+    left: 60px;
+    animation: diver2-2 2s linear infinite both;
+    animation-play-state: paused;
+} 
+@keyframes diver2-1 {
+    0% {visibility: hidden;}
+    50% {transform: translate(0, -20px);}
+    100% {transform: translate(0, 0);}
+}  
+@keyframes diver2-2 {
+    0% {transform: translate(0);}
+    50% {transform: translate(0, 20px);}
+    100% {transform: translate(0);}
+}
+@keyframes bubble-4 {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, 10px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 6px);}
+    100% {transform: translate(0);}
+}       
+
+@keyframes fish1-4 {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, 5px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 5px);}
+    100% {transform: translate(0);}
+}    
+
+@keyframes fish4-4 {
+    0% {transform: translate(0);}
+    25% {transform: translate(5px, 10px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(-5px, 10px);}
+    100% {transform: translate(0);}
+}      
+
+@keyframes whale {
+    0% {transform: translate(0);}
+    25% {transform: rotate(-5deg);}
+    50% {transform: translate(25px);}
+    75% {transform: rotate(5deg);}
+    100% {transform: translate(0);}
+} 
+
+.diver {
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    animation: diver 2s linear infinite both;
+    animation-play-state: paused;
+}  
+@keyframes diver {
+    0% {transform: translate(0);}
+    50% {transform: translate(0, -10px);}
+    100% {transform: translate(0);}
+} 
+/*
+.diver1-2 {
+    position: absolute;
+    top: 270px;
+    left: 20px;
+    animation: diver1-2 2s linear infinite both;
+}
+@keyframes diver1-2 {
+    0% {transform: translate(0);}
+    50% {transform: translate(0, 10px);}
+    100% {transform: translate(0);}
+} 
+*/
+
+/*modal page css*/
+#t-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.6);
+}
+.t-container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 770px;
+    background-color: #fff;
+}
+/*slide*/
+.slide {
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+}
+.slide .frame {
+    z-index: 1;
+    width: 4800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0;
+}
+.slide .frame li {
+    float: left;
+}
+
+
+/*슬라이드 구매 버튼*/
+.slide > .frame > li > .buy-box {
+    position: relative;
+    top: -300px;
+    left: 600px;
+    width: 630px;
+    height: 300px;
+    animation: buy-box 1s linear 1 both;
+}
+@keyframes buy-box {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(300px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slide > .frame > li > .buy-box > h2 {
+    position: absolute;
+    font-weight: bold;
+    top: 60px;
+    right: 250px;
+    font-size: 22px;
+}
+
+.slide > .frame > li > .buy-box > span {
+    position: absolute;
+    top: 100px;
+    left: 247px;
+    display: block;
+    border-top: 3px solid #000;
+    padding-top: 10px;
+    font-size: 18px;
+    color: #000;
+}
+.slide > .frame > li > .buy-box > .line {
+    position: absolute;
+    top: 126px;
+    left: 248px;
+    width: 132px;
+    border-top: 1px solid #000;
+}
+.slide > .frame > li > .buy-box > p {
+    position: absolute;
+    top: 145px;
+    left: 234px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+}
+.slide > .frame > li > .buy-box > .jelly > a {
+    position: absolute;
+    top: 200px;
+    right: 250px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 32px;
+    text-align: center;
+    border: 3px solid #fff;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+}
+.slide > .frame > li > .buy-box > .jelly > a.on {
+    animation: jelly 1s linear both;
+}
+@keyframes jelly {
+  from,
+  11.1%,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  22.2% {
+    transform: skewX(-10.5deg) skewY(-10.5deg);
+  }
+
+  33.3% {
+    transform: skewX(5.25deg) skewY(5.25deg);
+  }
+
+  44.4% {
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+
+.slide > .frame > li > .buy-box > .b-count { 
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    font-size: 80px;
+    font-family: 'Staatliches', cursive;
+    color: #b0d3f0;
+    animation: b-count 3s linear infinite both;
+}
+@keyframes b-count {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, -5px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 5px);}
+    100% {transform: translate(0);}  
+}
+.slide > .frame > li > .buy-box > .g-count {
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    font-size: 80px;
+    font-family: 'Staatliches', cursive;
+    color: #47b29e;
+    animation: g-count 3s linear infinite both;
+}
+@keyframes g-count {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, -5px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 5px);}
+    100% {transform: translate(0);}  
+}
+.slide > .frame > li > .buy-box > .y-count {
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    font-size: 80px;
+    font-family: 'Staatliches', cursive;
+    color: #f7b759;
+    animation: y-count 3s linear infinite both;
+}
+@keyframes y-count {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, -5px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 5px);}
+    100% {transform: translate(0);}  
+}
+.slide > .frame > li > .buy-box > .p-count {
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    font-size: 80px;
+    font-family: 'Staatliches', cursive;
+    color: #e882ba;
+    animation: p-count 3s linear infinite both;
+}
+@keyframes p-count {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, -5px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 5px);}
+    100% {transform: translate(0);}  
+}
+/*슬라이드 버튼*/
+.slide .prev {
+    z-index: 2;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+}
+.slide .next {
+    z-index: 2;
+    position: absolute;
+    top: 120px;
+    right: 20px;
+}
+.slide .x-button {
+    z-index: 2;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+
+
+/*탭 메뉴*/
+.tab-menu {
+    margin-top: 50px;
+    width: 1200px;
+    height: auto;
+}
+.tab-menu dl {}
+.tab-menu dl dt.on {
+    border-top: 4px solid orange;
+    background-color: #fff;
+    color: #000;
+    line-height: 56px;
+}
+.tab-menu dl dt {
+    position: absolute;
+    width: 400px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    color: #888;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    
+}
+.tab-menu dl dt:nth-child(3) {
+    position: absolute;
+    top: 350px;
+    right: 400px;
+}
+.tab-menu dl dt:nth-child(5) {
+    border-right: 1px solid #ccc;
+    position: absolute;
+    top: 350px;
+    right: 0;
+}
+.tab-menu dl dd {}
+
+.tab-menu .tab-name {
+    position: absolute;
+    top: 310px;
+}
+.tab-name h2 {
+    display: block;
+    font-size: 18px;
+    margin-left: 20px;
+/*    margin-top: 5px;*/
+}
+.tab-name img {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 1000px;
+}
+.tab-name p {
+    width: 140px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 1040px;
+}
+
+/*모바일 티켓 이용안내*/
+.tab-menu dl dd span {
+    display: block;
+    position: absolute;
+    top: 411px;
+}
+
+
+
+/*구매/유효기간/환불 안내*/
+.tab-menu dl dd .refund {
+    padding-top: 70px;
+    width: 1100px;
+    height: 600px;
+}
+.tab-menu dl dd .refund li {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 30px;
+    margin-top: 30px;
+    
+}
+.tab-menu dl dd .refund li > a:hover {
+    color: orange;
+}
+.tab-menu dl dd .refund p {
+    margin-top: 10px;
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #888;
+}
+.tab-menu dl dd .refund .help {
+    position: absolute;
+    bottom: -148px;
+    left: 180px;
+}
+
+
+/*할인정보*/
+.event {
+    position: relative;
+    top: 60px;
+    left: 100px;
+    height: auto;
+/*    overflow: hidden;*/
+}
+.event .event-d {
+    float: left;
+}
+.event .event-d a {
+    margin-top: 30px;
+    display: block;
+    width: 142.888888px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #eee;
+    color: #888;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.event .event-d:last-child a {
+    border-right: 1px solid #ccc;
+}
+
+.event .event-d a.on {
+    border-top: 4px solid orange;
+    background-color: #fff;
+    color: #000;
+    line-height: 46px;
+}
+
+
+/*할인정보 버튼 > 이벤트 할인*/
+.event .event-d:nth-child(1) > .event-sd {
+    position: absolute;
+    top: 120px;
+    height: 340px;
+}
+.event .event-d:nth-child(1) > .event-sd > .left-sd {
+    width: 300px;
+    height: 300px;
+    background-color: #eee;
+}
+.event .event-d:nth-child(1) > .event-sd > .left-sd > div {
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    
+}
+.event .event-d:nth-child(1) > .event-sd > .left-sd > div:nth-child(3) {
+    border-bottom: 1px solid #ccc;
+}
+
+.event .event-d:nth-child(1) > .event-sd > .right-sd {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 700px;
+    height: 300px;
+    background-color: #fff;
+    color: #888;
+}
+.event .event-d:nth-child(1) > .event-sd > .right-sd > div {
+    height: 100px;
+    padding-top: 6px;
+    padding-left: 10px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.event .event-d:nth-child(1) > .event-sd > .right-sd > div:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+
+/*할인정보 버튼 > 코엑스 몰 제휴 할인*/
+.event .event-d:nth-child(2) > .event-sd {
+    position: absolute;
+    top: 120px;
+    left: 0;
+} 
+.event .event-d:nth-child(2) > .event-sd > .left-sd {
+    width: 300px;
+    height: 960px;
+    background-color: #eee;
+}
+.event .event-d:nth-child(2) > .event-sd > .left-sd > div {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.event .event-d:nth-child(2) > .event-sd > .left-sd > div:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+
+.event .event-d:nth-child(2) > .event-sd > .right-sd {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 700px;
+    height: 960px;
+    background-color: #fff;
+    color: #888;   
+}
+.event .event-d:nth-child(2) > .event-sd > .right-sd > div {
+    height: 80px;
+    padding-top: 6px;
+    padding-left: 10px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.event .event-d:nth-child(2) > .event-sd > .right-sd > div:last-child {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+
+/*할인정보 버튼 > 우대 할인*/
+.event .event-d:nth-child(3) > .event-sd {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    height: 800px;
+}
+.event .event-d:nth-child(3) > .event-sd > .left-sd {
+    width: 300px;
+    height: 760px;
+    background-color: #eee;    
+}
+.event .event-d:nth-child(3) > .event-sd > .left-sd > div {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.event .event-d:nth-child(3) > .event-sd > .left-sd > div:nth-child(1) {
+    height: 120px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 40px;
+}
+.event .event-d:nth-child(3) > .event-sd > .left-sd > div:nth-child(9) {
+    border-bottom: 1px solid #ccc;
+}
+
+.event .event-d:nth-child(3) > .event-sd > .right-sd {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 700px;
+    height: 760px;
+    color: #888;
+}
+.event .event-d:nth-child(3) > .event-sd > .right-sd > div {
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 6px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.event .event-d:nth-child(3) > .event-sd > .right-sd > div:nth-child(1) {
+    height: 120px;
+    padding-top: 5px;
+}
+.event .event-d:nth-child(3) > .event-sd > .right-sd > div:nth-child(9) {
+    border-bottom: 1px solid #ccc;
+}
+
+
+/*할인정보 버튼 > 연간 회원 할인*/
+.event .event-d:nth-child(4) > .event-sd {
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+.event .event-d:nth-child(4) > .event-sd > .left-sd {
+    width: 300px;
+    height: 120px;
+    line-height: 120px;
+    background-color: #eee;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.event .event-d:nth-child(4) > .event-sd > .right-sd {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 700px;
+    height: 120px;
+    padding-top: 6px;
+    padding-left: 10px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #888;
+}
+
+
+/*제휴사할인*/
+.event .event-d:nth-child(5) > .event-sd {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    height: 460px;
+}
+.event .event-d:nth-child(5) > .event-sd > .left-sd {
+    width: 300px;
+    height: 420px;
+    background-color: #eee;
+}
+.event .event-d:nth-child(5) > .event-sd > .left-sd > div {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc; 
+    border-left: 1px solid #ccc; 
+}
+.event .event-d:nth-child(5) > .event-sd > .left-sd > div:nth-child(1) {
+    height: 100px;
+    line-height: 100px;
+    border-top: 1px solid #ccc;
+}
+
+
+.event .event-d:nth-child(5) > .event-sd > .right-sd {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 700px;
+    height: 420px;
+}
+.event .event-d:nth-child(5) > .event-sd > .right-sd > div {
+    height: 80px;
+    color: #888;
+    padding-left: 10px;
+    padding-top: 6px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc; 
+}
+.event .event-d:nth-child(5) > .event-sd > .right-sd > div:nth-child(1) {
+    height: 100px;
+    border-top: 1px solid #ccc;
+}
+
+
+/*통신사 할인*/
+.event .event-d:nth-child(6) > .event-sd {
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+.event .event-d:nth-child(6) > .event-sd > .left-sd {
+    width: 300px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+.event .event-d:nth-child(6) > .event-sd > .right-sd {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 700px;
+    height: 80px;
+    padding-top: 6px;
+    padding-left: 10px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/*카드사 할인*/
+.event .event-d:nth-child(7) > .event-sd {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    height: 460px;
+}
+.event .event-d:nth-child(7) > .event-sd > .left-sd {
+    width: 300px;
+    height: 420px;
+    background-color: #eee;
+}
+.event .event-d:nth-child(7) > .event-sd > .left-sd > div {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.event .event-d:nth-child(7) > .event-sd > .left-sd > div:nth-child(4) {
+    height: 100px;
+    line-height: 100px;
+}
+.event .event-d:nth-child(7) > .event-sd > .left-sd > div:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+.event .event-d:nth-child(7) > .event-sd > .right-sd {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 700px;
+    height: 420px;
+}
+.event .event-d:nth-child(7) > .event-sd > .right-sd > div {
+    height: 80px;
+    color: #888;
+    padding-top: 6px;
+    padding-left: 10px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.event .event-d:nth-child(7) > .event-sd > .right-sd > div:nth-child(4) {
+    height: 100px;
+}
+.event .event-d:nth-child(7) > .event-sd > .right-sd > div > span {
+    position: absolute;
+    top: 246px;
+    font-weight: bold;
+    color: #777;    
+}
+
+.event .event-d:nth-child(7) > .event-sd > .right-sd > div:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+/*top button*/
+.t-btn {
+    position: fixed;
+    right: 385px;
+    bottom: 120px;
+    z-index: 999;
+    display: none;
+    animation: t-btn 1s linear infinite both;
+    animation-play-state: paused;
+}
+@keyframes t-btn {
+    0% {transform: translate(0);}
+    25% {transform: translate(0, -3px);}
+    50% {transform: translate(0);}
+    75% {transform: translate(0, 3px);}
+    100% {transform: translate(0);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
